@@ -6,9 +6,15 @@ const path = require('path');
 const app = express();
 
 // MongoDB connection
-mongoose.connect('mongodb://localhost:27017/Zed-Full-Stack-App', {
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/photo_gallery_app', {
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  useUnifiedTopology: true
+}).then(() => {
+  console.log("✅ Connected to MongoDB Atlas");
+}).catch(err => {
+  console.error("❌ MongoDB Connection Error:", err.message);
 });
 
 // Models
