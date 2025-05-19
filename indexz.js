@@ -7,7 +7,7 @@ const app = express();
 
 // MongoDB connection
 
-mongoose.connect('mongodb+srv://<username>:<password>@cluster0.mongodb.net/photo_gallery_app', {
+mongoose.connect('mongodb+srv://Zinabu:Sima@cloud7@cluster0.vb21kbo.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
