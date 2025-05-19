@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zed Cloud Gallery</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>🌍 Zed Cloud Gallery</h1>
+  <div class="gallery">
+    <% photos.forEach(photo => { %>
+      <div class="photo-card"><img src="/uploads/<%= photo.filename %>" /></div>
+    <% }) %>
+  </div>
+  <a href="/login" class="btn">Login</a> or <a href="/register" class="btn">Register</a>
+</body>
+</html>

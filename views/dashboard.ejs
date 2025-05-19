@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h2>📂 My Dashboard</h2>
+  <form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="image" required />
+    <button type="submit">Upload</button>
+  </form>
+  <div class="gallery">
+    <% photos.forEach(photo => { %>
+      <div class="photo-card"><img src="/uploads/<%= photo.filename %>" /></div>
+    <% }) %>
+  </div>
+  <a href="/logout" class="btn">Logout</a>
+</body>
+</html>
