@@ -7,7 +7,17 @@ const app = express();
 
 // MongoDB connection
 
-mongoose.connect('mongodb+srv://Zinabu:Sima@cloud7@cluster0.vb21kbo.mongodb.net/', {
+mongoose.connect('mongodb+srv://zamdlove:Simacloud7@cluster0.vb21kbo.mongodb.net/photo_gallery_app?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => {
+  console.log("✅ Connected to MongoDB Atlas");
+})
+.catch(err => {
+  console.error("❌ MongoDB Connection Error:", err.message);
+});
+
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
