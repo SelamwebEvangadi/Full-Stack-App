@@ -7,7 +7,7 @@ const app = express();
 
 // MongoDB connection
 
-mongoose.connect('mongodb+srv://zamdlove:Simacloud7@cluster0.vb21kbo.mongodb.net/photo_gallery_app?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://zamdlove:Simacloud7@cluster0.vb21kbo.mongodb.net/zinabu' {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
