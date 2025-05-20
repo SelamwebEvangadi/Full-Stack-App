@@ -19,21 +19,6 @@ mongoose.connect('mongodb+srv://zamdlove:lXYcZnKCJkIa1r1m@cluster0.lxlycmk.mongo
   console.error("❌ MongoDB Connection Error:", err.message);
 });
 
-.then(() => {
-  console.log("✅ Connected to MongoDB Atlas");
-})
-.catch(err => {
-  console.error("❌ MongoDB Connection Error:", err.message);
-});
-
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-}).then(() => {
-  console.log("✅ Connected to MongoDB Atlas");
-}).catch(err => {
-  console.error("❌ MongoDB Connection Error:", err.message);
-});
-
 // Models
 const User = require('./models/User');
 const Photo = require('./models/Photo');
