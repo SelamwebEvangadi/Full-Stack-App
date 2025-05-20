@@ -10,7 +10,7 @@ const app = express();
 mongoose.connect('mongodb+srv://zamdlove:Simoncloud7@cluster0.vb21kbo.mongodb.net/') 
   useNewUrlParser: true,
   useUnifiedTopology: true
-})
+)
 .then(() => {
   console.log("✅ Connected to MongoDB Atlas");
 })
