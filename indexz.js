@@ -19,8 +19,6 @@ mongoose.connect('mongodb+srv://zamdlove:lXYcZnKCJkIa1r1m@Cluster0.mongodb.net/z
   console.error("❌ MongoDB Connection Error:", err.message);
 });
 
-
-})
 .then(() => {
   console.log("✅ Connected to MongoDB Atlas");
 })
