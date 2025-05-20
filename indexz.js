@@ -7,7 +7,9 @@ const app = express();
 
 // MongoDB connection
 
-mongoose.connect('mongodb+srv://Zinabu:Sima%40cloud7@cluster0.vb21kbo.mongodb.net/zinabu?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://zamdlove:Simoncloud7@cluster0.vb21kbo.mongodb.net/zinabu?retryWrites=true&w=majority', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
