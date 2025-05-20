@@ -9,8 +9,6 @@ const app = express();
 
 mongoose.connect('mongodb+srv://zamdlove:Simoncloud7@cluster0.vb21kbo.mongodb.net/zinabu?retryWrites=true&w=majority', {
   useNewUrlParser: true,
-  useUnifiedTopology: true', {
-  useNewUrlParser: true,
   useUnifiedTopology: true
 })
 .then(() => {
