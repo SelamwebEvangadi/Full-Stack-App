@@ -8,7 +8,7 @@ const app = express();
 // MongoDB connection
 
 
-mongoose.connect('mongodb+srv://zamdlove:lXYcZnKCJkIa1r1m@cluster0.lxlycmk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://zamdlove:lXYcZnKCJkIa1r1m@cluster0.lxlycmk.mongodb.net/zedodb?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
