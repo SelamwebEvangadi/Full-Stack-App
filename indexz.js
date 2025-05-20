@@ -7,9 +7,8 @@ const app = express();
 
 // MongoDB connection
 
-const mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://<username>:<encoded_password>@<your-cluster>.mongodb.net/<your-db>?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://zamdlove:lXYcZnKCJkIa1r1m@Cluster0.mongodb.net/zedodb?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
