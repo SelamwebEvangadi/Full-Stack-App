@@ -7,16 +7,19 @@ const app = express();
 
 // MongoDB connection
 
-mongoose.connect('mongodb+srv://zamdlove:Simoncloud7@cluster0.vb21kbo.mongodb.net/') 
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb+srv://<username>:<encoded_password>@<your-cluster>.mongodb.net/<your-db>?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
-)
+})
 .then(() => {
-  console.log("✅ Connected to MongoDB Atlas");
+  console.log("✅ Connected to MongoDB Atlas from EC2");
 })
 .catch(err => {
   console.error("❌ MongoDB Connection Error:", err.message);
 });
+
 
 })
 .then(() => {
