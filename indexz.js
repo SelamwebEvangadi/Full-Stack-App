@@ -4,17 +4,15 @@ const multer = require("multer");
 const session = require("express-session");
 const path = require("path");
 const app = express();
+require("dotenv").config();
 
 // MongoDB connection
 
 mongoose
-  .connect(
-    "mongodb+srv://selamgolden1827:K6PBf6wuwfQ5EHEp@dev-cluster.4qhowx6.mongodb.net/selam-db?retryWrites=true&w=majority&appName=dev-cluster",
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
-  )
+  .connect(process.env.MONGODB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => {
     console.log("✅ Connected to MongoDB Atlas from EC2");
   })
