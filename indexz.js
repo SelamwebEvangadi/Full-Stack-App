@@ -1,10 +1,11 @@
-require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const session = require("express-session");
 const path = require("path");
 const app = express();
+
+require("dotenv").config();
 
 // MongoDB connection
 console.log("MONGODB_URI is:", process.env.MONGODB_URI);
